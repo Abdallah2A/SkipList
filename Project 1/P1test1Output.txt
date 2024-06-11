@@ -1,0 +1,90 @@
+SkipList dump:
+Node has depth 1, Value (null)
+SkipList size is: 0
+Rectangle rejected: (r_r, -1, -20, 3, 4)
+Rectangle rejected: (rec, 7, -8, 1, 3)
+Rectangle rejected: (virtual_rec0, 1, 1, 0, 0)
+Rectangle rejected: (virtual_REC0, 0, 0, 11, 0)
+Rectangle rejected: (inExistRec_0, 1, 1, -1, -2)
+Rectangle inserted: (r1, 10, 10, 5, 5)
+Rectangle rejected: (11, 11, 0, 0)
+Rectangle inserted: (r2, 15, 15, 5, 5)
+Rectangle inserted: (r3, 7, 7, 10, 10)
+Rectangle inserted: (r4, 20, 25, 7, 9)
+Rectangle inserted: (r4, 20, 12, 3, 3)
+Rectangle inserted: (r5, 6, 7, 11, 9)
+SkipList dump:
+Node has depth 4, Value (null)
+Node has depth 1, Value (r1, 10, 10, 5, 5)
+Node has depth 4, Value (r2, 15, 15, 5, 5)
+Node has depth 2, Value (r3, 7, 7, 10, 10)
+Node has depth 2, Value (r4, 20, 12, 3, 3)
+Node has depth 3, Value (r4, 20, 25, 7, 9)
+Node has depth 3, Value (r5, 6, 7, 11, 9)
+SkipList size is: 6
+Rectangle rejected: (r10, 100, 100, 1000, 10)
+Rectangle rejected: (r11, 100, 100, 10, 1000)
+Rectangle inserted: (r12, 108, 136, 55, 103)
+Rectangle rejected: (r13, 360, 968, 7110, 354)
+Rectangle inserted: (r14, 120, 117, 93, 706)
+Rectangle inserted: (r15, 120, 117, 93, 706)
+Rectangle not removed: (r_r)
+Rectangle not removed: (inExistRec)
+Rectangles found:
+(r4, 20, 12, 3, 3)
+(r4, 20, 25, 7, 9)
+Rectangle removed: (r4, 20, 12, 3, 3)  #May  differ according to which one was removed!
+SkipList dump:
+Node has depth 5, Value (null)
+Node has depth 1, Value (r1, 10, 10, 5, 5)
+Node has depth 2, Value (r12, 108, 136, 55, 103)
+Node has depth 5, Value (r14, 120, 117, 93, 706)
+Node has depth 1, Value (r15, 120, 117, 93, 706)
+Node has depth 4, Value (r2, 15, 15, 5, 5)
+Node has depth 2, Value (r3, 7, 7, 10, 10)
+Node has depth 3, Value (r4, 20, 25, 7, 9)
+Node has depth 3, Value (r5, 6, 7, 11, 9)
+SkipList size is: 8
+Rectangle removed: (r5, 6, 7, 11, 9)
+Rectangle not removed: (r5)
+SkipList dump:
+Node has depth 5, Value (null)
+Node has depth 1, Value (r1, 10, 10, 5, 5)
+Node has depth 2, Value (r12, 108, 136, 55, 103)
+Node has depth 5, Value (r14, 120, 117, 93, 706)
+Node has depth 1, Value (r15, 120, 117, 93, 706)
+Node has depth 4, Value (r2, 15, 15, 5, 5)
+Node has depth 2, Value (r3, 7, 7, 10, 10)
+Node has depth 3, Value (r4, 20, 25, 7, 9)
+SkipList size is: 7
+Rectangles found:
+(r14, 120, 117, 93, 706)
+Rectangle not found: r11
+Rectangle not found: R11
+Rectangle not removed: (r10)
+Rectangle not removed: (r11)
+Rectangle removed: (r12, 108, 136, 55, 103)
+Rectangle not removed: (r13)
+Rectangle removed: (r14, 120, 117, 93, 706)
+Rectangle rejected: (100, 100, 1000, 10)
+Rectangle not removed: (r14)
+Rectangles intersecting region (-5, -5, 20, 20): 
+(r1, 10, 10, 5, 5)
+(r3, 7, 7, 10, 10)
+Intersections pairs:
+(r1, 10, 10, 5, 5 | r3, 7, 7, 10, 10)
+(r2, 15, 15, 5, 5 | r3, 7, 7, 10, 10)
+(r3, 7, 7, 10, 10 | r1, 10, 10, 5, 5)
+(r3, 7, 7, 10, 10 | r2, 15, 15, 5, 5)
+SkipList dump:
+Node has depth 5, Value (null)
+Node has depth 1, Value (r1, 10, 10, 5, 5)
+Node has depth 1, Value (r15, 120, 117, 93, 706)
+Node has depth 4, Value (r2, 15, 15, 5, 5)
+Node has depth 2, Value (r3, 7, 7, 10, 10)
+Node has depth 3, Value (r4, 20, 25, 7, 9)
+SkipList size is: 5
+Rectangles found:
+(r2, 15, 15, 5, 5)
+Rectangles found:
+(r4, 20, 25, 7, 9)

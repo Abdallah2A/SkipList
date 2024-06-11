@@ -1,0 +1,71 @@
+ 
+insert inExist_Rec0	1	1	0	10
+insert inExist_Rec1 1 1		7 -10
+insert inExist_Rec2 0 0	0 0
+insert inExist_Rec3 -1 -2 7 10
+insert inExist_Rec4 -1 1 -2 10
+insert inExist_Rec5 1 -1 0 10
+insert inExist_Rec6 12 1 7 -6	
+
+intersections
+	remove inExist_Rec1
+	remove 12 1 7 -6
+
+insert r1 0 0 217 1474647
+insert r2 10 10 15 15
+insert R2 11 11 5 5 
+insert r3 0 0 1000 10
+insert r4 0 0 10 1000
+
+regionsearch 900 5 0 0 
+regionsearch 900 5 1 1
+regionsearch 5 900 0 1
+
+remove 0 0 217 1474647
+intersections
+remove R2
+remove r2
+
+insert r5 56 72 80 80
+insert r6 61 73 11 9
+insert r6 61 73 11 9
+regionsearch 61 73 0 0
+search r6
+ 
+insert r5 20 12 3 3
+insert r7 23 15 100 100
+insert r8 23 12 3 3
+insert r9 20 15 3 3
+
+intersections
+regionsearch 23 15 0 0
+regionsearch 22 14 2 2
+regionsearch 22 14 2 0
+
+remove r4
+remove 61 73 11 9
+remove r5
+remove r6
+remove 23 15 100 100
+
+search r2
+search 20 15 3 3
+
+insert biggestRec	 0 0 2147483647 2147483647
+insert smallest_Rec 	 0 0 1 1 
+
+intersections
+	remove 0 0 1	 1
+   search biggestRec
+	remove 0 0 2147483647 2147483640
+	remove 0 0 2147483647 2147483647
+   search biggestRec	
+	remove smallest_Rec
+
+regionsearch 0 0 2147483647 2147483647
+intersections
+
+regionsearch -21 -21 2147483647 2147483647 
+regionsearch -2147483644 -2147483644 2147483647 2147483647
+regionsearch 0 0 -2147483644 -2147483644
+   
